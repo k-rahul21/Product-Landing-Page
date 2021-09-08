@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header id="header">
@@ -17,26 +23,20 @@
         />
       </div>
       <ul id="nav-bar">
-        <li>
-          <a class="nav-link" href="#features">Features</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#how-it-works">How it works</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#pricing">Pricing</a>
-        </li>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
       </ul>
     </header>
     <form id="form">
       <h2>Handcrafted, Home-made masterpieces</h2>
-      <input type="mail" placeholder="Enter Your Email" />
-      <button>Get Started</button>
+      <input id="mail" type="mail" placeholder="Enter Your Email" required />
+      <button id="submit">Get Started</button>
     </form>
     <section id="features">
-      <div>
-        <div><img class="icon" src="images/premium.png" /></div>
-        <div class="content">
+      <div class="flex-box">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
           <h3>Premium Materials</h3>
           <p>
             Our trombones use the shiniest brass which is sourced locally. This
@@ -44,9 +44,9 @@
           </p>
         </div>
       </div>
-      <div>
-        <div><img class="icon" src="images/truck.png" /></div>
-        <div class="content">
+      <div class="flex-box">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
           <h3>Shipping</h3>
           <p>
             Our trombones use the shiniest brass which is sourced locally. This
@@ -54,9 +54,11 @@
           </p>
         </div>
       </div>
-      <div>
-        <div><img class="icon" src="images/assurance.png" /></div>
-        <div class="content">
+      <div class="flex-box">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
           <h3>Quality Assurance</h3>
           <p>
             Our trombones use the shiniest brass which is sourced locally. This
@@ -65,8 +67,10 @@
         </div>
       </div>
     </section>
+
     <section id="how-it-works">
       <iframe
+        id="video"
         width="600"
         height="375"
         src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
@@ -74,7 +78,47 @@
         allowfullscreen
       ></iframe>
     </section>
-    <section id="pricing"></section>
+    <section id="pricing">
+      <div class="container">
+        <div class="title">
+          <h2>FABRICS</h2>
+        </div>
+        <div class="details">
+          <h3 class="price">$600</h3>
+          <p>Cotton</p>
+          <p>Chiffon</p>
+          <p>Velvet</p>
+          <p>Denim</p>
+        </div>
+        <button class="btn">SELECT</button>
+      </div>
+      <div class="container">
+        <div class="title">
+          <h2>FOOTWEAR</h2>
+        </div>
+        <div class="details">
+          <h3 class="price">$400</h3>
+          <p>Adidas</p>
+          <p>Nike</p>
+          <p>Converse</p>
+          <p>Fila</p>
+        </div>
+        <button class="btn">SELECT</button>
+      </div>
+      <div class="container">
+        <div class="title">
+          <h2>EYEWEAR</h2>
+        </div>
+        <div class="details">
+          <h3 class="price">$700</h3>
+          <p>RayBan</p>
+          <p>Dior</p>
+          <p>Titan</p>
+          <p>Vogue</p>
+        </div>
+        <button class="btn">SELECT</button>
+      </div>
+    </section>
     <footer id="footer">
       <ul>
         <div id="nav-links">

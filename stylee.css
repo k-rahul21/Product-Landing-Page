@@ -5,7 +5,11 @@
 
 body {
   text-align: center;
-  font-size: 1.2rem;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #header,
@@ -22,16 +26,10 @@ body {
   margin: 2rem;
 }
 
-#header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 #header-img {
   width: 40vw;
   height: auto;
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 #nav-bar {
@@ -49,29 +47,22 @@ body {
   margin-top: 3rem;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  padding: 1.5rem;
-}
-
-h2,
-#mail,
-#submit,
 #form {
-  margin: 1rem;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
 }
 
-#mail {
-  width: 14vw;
+#form > #mail {
+  padding: 0.8rem;
 }
 
 #submit {
-  color: #fff;
-  border: 2px solid #3db2ff;
-  font-size: 1.2rem;
-  padding: 0.7rem;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #fff;
+  border-radius: 2rem;
 }
 
 #features {
@@ -108,13 +99,13 @@ h2,
   padding: 0 5rem;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 825px) {
   #pricing {
     flex-direction: column;
   }
 }
 
-@media (max-width: 975px) {
+@media (max-width: 825px) {
   .container {
     flex-basis: 50%;
   }
@@ -133,6 +124,8 @@ h2,
 
 .container h2 {
   margin-top: 0;
+  padding: 1rem;
+  margin: 0 0 0.5rem 0;
 }
 
 .container h3 {
@@ -155,8 +148,4 @@ h2,
 #footer {
   text-align: end;
   padding: 1rem;
-}
-
-#footer a {
-  padding-right: 0;
 }
